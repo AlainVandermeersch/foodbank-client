@@ -85,6 +85,7 @@ export class OrgbenefdetailComponent implements OnInit {
     const modifiedOrganisation = Object.assign({}, oldOrganisation, orgForm);
 
     modifiedOrganisation.lupdUserName = this.userName;
+    modifiedOrganisation.nEq = modifiedOrganisation.nPers; // if statistics updated by hand, equivalents are same as nPers
     this.organisationsService.update(modifiedOrganisation)
         .subscribe( ()  => {
               this.messageService.add({
