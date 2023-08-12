@@ -9,7 +9,7 @@ import {select, Store} from '@ngrx/store';
 import {AppState} from '../reducers';
 import {LazyLoadEvent} from 'primeng/api';
 import {AuthState} from '../auth/reducers';
-import {enmOrgCategories, enmStatusCompany, enmYn} from '../shared/enums';
+import {enmLanguage, enmOrgCategories, enmStatusCompany, enmYn} from '../shared/enums';
 import {RegionEntityService} from './services/region-entity.service';
 import {DepotEntityService} from '../depots/services/depot-entity.service';
 import {QueryParams} from '@ngrx/data';
@@ -43,6 +43,7 @@ export class OrganisationsComponent implements OnInit {
     booCanCreate: boolean;
     regions: any[];
     depots: any[];
+    languages: any[];
     YNOptions:  any[];
     bankName: string;
     bankShortName: string;
@@ -50,6 +51,7 @@ export class OrganisationsComponent implements OnInit {
     depotName: string;
     first: number;
     regionSelected: number;
+    langueSelected: number;
     depotSelected: string;
     classeFBBASelected: number;
     statutSelected: string;
@@ -71,6 +73,7 @@ export class OrganisationsComponent implements OnInit {
         this.booShowDepots = false;
         this.orgCategories = enmOrgCategories;
         this.statuts = enmStatusCompany;
+        this.languages =  enmLanguage;
         this.YNOptions = enmYn;
         this.lienBanque = 0;
         this.bankName = '';
@@ -200,6 +203,9 @@ export class OrganisationsComponent implements OnInit {
             }
             if (this.regionSelected) {
                 queryParms['regId'] = this.regionSelected;
+            }
+            if (this.langueSelected) {
+                queryParms['langue'] = this.langueSelected;
             }
             if (this.depotSelected) {
                 queryParms['lienDepot'] = this.depotSelected;
@@ -356,6 +362,22 @@ export class OrganisationsComponent implements OnInit {
             // delete regId entry
             if (latestQueryParams.hasOwnProperty('regId')) {
                 delete latestQueryParams['regId'];
+            }
+        }
+        this.loadPageSubject$.next(latestQueryParams);
+    }
+    filterLangue(languageId) {
+        this.langueSelected = languageId;
+        this.first = 0;
+        const latestQueryParams = {...this.loadPageSubject$.getValue()};
+        // when we switch from active to archived list and vice versa , we need to restart from first page
+        latestQueryParams['offset'] = '0';
+        if (this.langueSelected) {
+            latestQueryParams['langue'] = languageId;
+        } else {
+            // delete regId entry
+            if (latestQueryParams.hasOwnProperty('langue')) {
+                delete latestQueryParams['langue'];
             }
         }
         this.loadPageSubject$.next(latestQueryParams);

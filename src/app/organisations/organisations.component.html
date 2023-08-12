@@ -10,6 +10,14 @@
                     {{ getTitle() }}
                 </div>
                 <div class="p-field p-col-12 p-md-2">
+                    <label i18n="@@Language" for="langue">Language</label>
+                    <p-dropdown [options]="languages" id="langue" name="langue" (onChange)="filterLangue($event.value)" >
+                        <ng-template let-option pTemplate="item">
+                            <span>{{option.label}}</span>
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+                <div class="p-field p-col-12 p-md-2">
                     <label i18n="@@OrgRegion" for="regions">Region</label>
                     <p-dropdown id ="regions" [options]="regions" (onChange)="filterRegion($event.value)"  >
                         <ng-template let-option pTemplate="item">
@@ -17,7 +25,7 @@
                         </ng-template>
                     </p-dropdown>
                 </div>
-                <div *ngIf="!depotName" class="p-field p-col-12 p-md-4">
+                <div *ngIf="!depotName" class="p-field p-col-12 p-md-2">
                     <label i18n="@@OrgDepot" for="depots">Depot</label>
                     <p-dropdown id ="depots" [options]="depots" (onChange)="filterDepot($event.value)"  >
                         <ng-template let-option pTemplate="item">

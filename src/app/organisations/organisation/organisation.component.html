@@ -75,6 +75,10 @@
                     </div>
                 <div class="p-fluid p-formgrid p-grid">
                     <div class="p-field p-col-12 p-md-2">
+                        <label i18n="@@Language" for="langue">Language</label>
+                        <p-dropdown [options]="languages" id="langue" name="langue" [ngModel]="organisation.langue"></p-dropdown>
+                    </div>
+                    <div class="p-field p-col-12 p-md-2">
                         <label  i18n="@@OrganisationStatus" for="statut">Status Company</label>
                         <p-dropdown [options]="statuts" id="statut" name="statut" [ngModel]="organisation.statut"></p-dropdown>
                     </div>
@@ -82,11 +86,11 @@
                         <label i18n="@@OrganisationDistAddress" for="adresse">Distribution Address</label>
                         <input pInputText id="adresse" name="adresse" maxlength="100" [ngModel]="organisation.adresse" />
                     </div>
-                    <div class="p-field p-col-12 p-md-2">
+                    <div class="p-field p-col-12 p-md-1">
                         <label i18n="@@ZipCode" for="cp">Zip Code</label>
                         <input pInputText id="cp" name="cp" maxlength="6" [ngModel]="organisation.cp" />
                     </div>
-                    <div class="p-field p-col-12 p-md-3">
+                    <div class="p-field p-col-12 p-md-2">
                         <label i18n="@@City" for="localite">City</label>
                         <input pInputText id="localite" name="localite" maxlength="50" [ngModel]="organisation.localite" />
                     </div>

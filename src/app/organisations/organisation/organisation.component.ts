@@ -7,7 +7,7 @@ import {DefaultOrganisation, Organisation} from '../model/organisation';
 import {ConfirmationService, MessageService} from 'primeng/api';
 import {
     enmCountry,
-    enmGender,
+    enmGender, enmLanguage,
     enmOrgActivities,
     enmOrgCategories,
     enmStatusCompany,
@@ -57,6 +57,7 @@ export class OrganisationComponent implements OnInit {
     selectedDepotRamasse: OrgSummary;
     genders: any[];
     statuts: any[];
+    languages: any[];
     regions: any[];
     countries: any[];
     orgActivities: any[];
@@ -86,6 +87,7 @@ export class OrganisationComponent implements OnInit {
       this.statuts = enmStatusCompany;
       this.genders = enmGender;
       this.countries = enmCountry;
+      this.languages =  enmLanguage;
       this.orgActivities = enmOrgActivities;
       this.supplyOptionsMonth = enmSupplyMonth;
       this.supplyOptionsWeek = enmSupplyWeek;
