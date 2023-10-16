@@ -30,7 +30,8 @@ export class OrgfeaddetailComponent implements OnInit {
   userName: string;
   selectedAntenne: any;
   filteredOrganisations: any[];
-  isAntenne: boolean;
+  filteredOrganisationsPrepend: any[]
+
 
 
   constructor(
@@ -44,7 +45,10 @@ export class OrgfeaddetailComponent implements OnInit {
   ) {
     this.booCanSave = false;
     this.userName = '' ;
-    this.isAntenne = false;
+    this.filteredOrganisationsPrepend = [
+          {idDis: null, fullname: '-' },
+      ];
+    this.selectedAntenne = null;
   }
 
   ngOnInit(): void {
@@ -55,13 +59,12 @@ export class OrgfeaddetailComponent implements OnInit {
         ).subscribe(organisation => {
           if (organisation) {
             this.organisation = organisation;
-            this.isAntenne = false;
-            if (organisation.birbCode == "1") {
-              this.isAntenne = true;
+            this.selectedAntenne = null;
+            if (!organisation.birbCode) {
               this.orgsummaryService.getByKey(organisation.antenne)
                   .subscribe(
                       antenne => {
-                        if (antenne !== null) {
+                        if (antenne !== null && antenne.idDis > 1) {
                           this.selectedAntenne = Object.assign({}, antenne, {fullname: antenne.idDis + ' ' + antenne.societe});
                         }
                       });
@@ -95,7 +98,7 @@ export class OrgfeaddetailComponent implements OnInit {
       modifiedOrganisation.antenne = this.selectedAntenne.idDis;
     }
     else {
-      modifiedOrganisation.antenne = 0;
+      modifiedOrganisation.antenne = null;
     }
     this.organisationsService.update(modifiedOrganisation)
         .subscribe( ()  => {
@@ -107,8 +110,6 @@ export class OrgfeaddetailComponent implements OnInit {
               this.onOrganisationUpdate.emit(modifiedOrganisation);
             },
             ( dataserviceerror) => { 
-                 
-                 
                 const  errMessage = {severity: 'error', summary: 'Update',
                 // tslint:disable-next-line:max-line-length
                 detail: $localize`:@@messageOrganisationUpdateError:The organisation ${modifiedOrganisation.idDis} ${modifiedOrganisation.societe} could not be updated: error: ${dataserviceerror.message}`,
@@ -133,20 +134,20 @@ export class OrgfeaddetailComponent implements OnInit {
       this.onOrganisationQuit.emit();
     }
   }
+    filterOrganisation(event ) {
+        const  queryOrganisationParms: QueryParams = {'lienBanque': this.organisation.lienBanque.toString(),'actif': '1','isFead': '1'};
 
-    handleAntenneStatusChange(e: any) {
-        if (e.checked) {
-            this.organisation.birbCode = "1";
-            this.isAntenne = true;
+        if (event.query.length > 0) {
+            queryOrganisationParms['societeOrIdDis'] = event.query.toLowerCase();
         }
-        else {
-            this.organisation.birbCode = "0";
-            this.isAntenne = false;
-            this.organisation.antenne = 0;
-            this.selectedAntenne = 0;
-        }
-
+        this.orgsummaryService.getWithQuery(queryOrganisationParms)
+            .subscribe(filteredOrganisations => {
+                this.filteredOrganisations = this.filteredOrganisationsPrepend.concat(filteredOrganisations.map((organisation) =>
+                    Object.assign({}, organisation, {fullname: organisation.idDis + ' ' + organisation.societe})
+                ));
+            });
     }
+
   generateTooltipAgreed() {
     return $localize`:@@OrgToolTipIsAgreed:Is Organisation Agreed?`;
   }
@@ -162,10 +163,6 @@ export class OrgfeaddetailComponent implements OnInit {
   generateTooltipFEADCode() {
     return $localize`:@@OrgToolTipFEADCode:FEAD Code of the Organisation`;
   }
-
-   generateTooltipIsAntenne() {
-        return $localize`:@@OrgToolTipIsAntenne:Is this Organisation a Subsidiary of another Organisation?`;
-    }
 
     generateTooltipAntenne() {
         return $localize`:@@OrgToolTipAntenne:Parent Organisation of this Subsidiary`;

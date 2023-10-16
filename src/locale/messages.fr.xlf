@@ -2287,7 +2287,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">125</context>
+          <context context-type="linenumber">126</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/regions/region/region.component.ts</context>
@@ -6772,7 +6772,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">105</context>
+          <context context-type="linenumber">108</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageOrganisationUpdateError" datatype="html">
@@ -6792,7 +6792,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">114</context>
+          <context context-type="linenumber">115</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgNbPersSorted" datatype="html">
@@ -7780,7 +7780,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">151</context>
+          <context context-type="linenumber">152</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.ts</context>
@@ -7816,7 +7816,7 @@
         <target>Une entité Dépôt avec l'identifiant <x id="PH" equiv-text="organisation.idDis"/> n'existe pas</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">512</context>
+          <context context-type="linenumber">509</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ToolTipOrganisationDuplicates" datatype="html">
@@ -7824,15 +7824,7 @@
         <target><x id="PH" equiv-text="anomaly"/> organisations existent avec le même nom. Certains pourraient être archivés</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">516</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ToolTipAntenneMissing" datatype="html">
-        <source>For this antenne a parent Organisation with id <x id="PH" equiv-text="organisation.antenne"/> does not exist.</source>
-        <target>Pour cette antenne, une organisation parente avec l'identifiant <x id="PH" equiv-text="organisation.antenne"/> n'existe pas.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">519</context>
+          <context context-type="linenumber">513</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ToolTipDepotRamasseDifferent" datatype="html">
@@ -7840,7 +7832,7 @@
         <target>cet organisme a un dépôt différent pour la ramasse</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">547</context>
+          <context context-type="linenumber">542</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipGestBen" datatype="html">
@@ -7848,7 +7840,7 @@
         <target>L'organisation gère-t-elle les bénéficiaires ?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">553</context>
+          <context context-type="linenumber">548</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipGuestHouse" datatype="html">
@@ -7856,7 +7848,7 @@
         <target>L'organisation est-elle une maison d'accueil ?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
-          <context context-type="linenumber">557</context>
+          <context context-type="linenumber">552</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgAuditor" datatype="html">
@@ -8295,20 +8287,12 @@
           <context context-type="linenumber">18</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="OrgIsAntenne" datatype="html">
-        <source>Is Antenne?</source>
-        <target>Est-une Antenne?</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="AntenneParent" datatype="html">
         <source>Antenne Parent</source>
         <target>Organisation Mère</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.html</context>
-          <context context-type="linenumber">31</context>
+          <context context-type="linenumber">28</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgFEADFromUs" datatype="html">
@@ -8316,7 +8300,7 @@
         <target>FEAD de nous?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.html</context>
-          <context context-type="linenumber">37</context>
+          <context context-type="linenumber">35</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipFEADPersons" datatype="html">
@@ -8324,7 +8308,7 @@
         <target>Nb de bénéficiaires agréées par la FEAD</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">155</context>
+          <context context-type="linenumber">156</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.ts</context>
@@ -8336,7 +8320,7 @@
         <target>Le FEAD est-il distribué par les Banques Alimentaires ?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">159</context>
+          <context context-type="linenumber">160</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.ts</context>
@@ -8348,19 +8332,11 @@
         <target>Code FEAD de l'organisation</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">163</context>
+          <context context-type="linenumber">164</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.ts</context>
           <context context-type="linenumber">346</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="OrgToolTipIsAntenne" datatype="html">
-        <source>Is this Organisation a Subsidiary of another Organisation?</source>
-        <target>Cette organisation est-elle une antenne d'une autre organisation ?</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">167</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipAntenne" datatype="html">
@@ -8368,7 +8344,7 @@
         <target>Organisation mère de cette antenne</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeaddetail/orgfeaddetail.component.ts</context>
-          <context context-type="linenumber">171</context>
+          <context context-type="linenumber">168</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgFEADFromUsSorted" datatype="html">
@@ -10086,6 +10062,18 @@
           <context context-type="sourcefile">src/app/users/users.component.ts</context>
           <context context-type="linenumber">576</context>
         </context-group>
+      </trans-unit>
+      <trans-unit id="OrgIsAntenne">
+        <source/>
+        <target>Est-une Antenne?</target>
+      </trans-unit>
+      <trans-unit id="OrgToolTipIsAntenne">
+        <source/>
+        <target>Cette organisation est-elle une antenne d'une autre organisation ?</target>
+      </trans-unit>
+      <trans-unit id="ToolTipAntenneMissing">
+        <source/>
+        <target>Pour cette antenne, une organisation parente avec l'identifiant <x id="PH" equiv-text="organisation.antenne"/> n'existe pas.</target>
       </trans-unit>
     </body>
   </file>

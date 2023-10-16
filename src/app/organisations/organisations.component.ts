@@ -495,13 +495,10 @@ export class OrganisationsComponent implements OnInit {
         return $localize`:@@ToolTipNbLogins:Nb Of Logins since 2021`;
     }
 
-    isAntenneMissing(organisation: Organisation) {
-        return organisation.birbCode == "1" && organisation.antenneOrgName == "";
 
-    }
 
     hasAnomalies(organisation:  Organisation) {
-        return (organisation.anomalies != "") || this.isAntenneMissing(organisation);
+        return (organisation.anomalies != "")
 
     }
 
@@ -515,9 +512,7 @@ export class OrganisationsComponent implements OnInit {
         if (anomaly != "") {
             message += $localize`:@@ToolTipOrganisationDuplicates:${anomaly} organisations exist with the same name. Some could be archived`;
         }
-        if (this.isAntenneMissing(organisation)) {
-            message += $localize`:@@ToolTipAntenneMissing:For this antenne a parent Organisation with id ${organisation.antenne} does not exist.`;
-        }
+
        return message;
 
     }

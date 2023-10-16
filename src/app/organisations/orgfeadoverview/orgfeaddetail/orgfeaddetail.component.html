@@ -4,7 +4,7 @@
             Organisation {{ organisation.idDis}} {{ organisation.societe}} Updated on {{organisation.lupdTs}} By {{organisation.lupdUserName}}
         </div>
     </ng-template>
-    <form  #orgForm="ngForm">
+    <form  #orgForm="ngForm" [style]="{'height':'320px'}">
         <div class="p-formgroup-inline">
             <button  *ngIf="booCanSave" type="button" pButton icon="pi pi-check" (click)="save(organisation, orgForm.value)" [disabled] = "orgForm.invalid" i18n-label="@@Save" label="Save"></button>
             <button  type="button" pButton icon="pi pi-check" (click)="quit($event, organisation, orgForm, orgForm.dirty)" i18n-label="@@Return" label="Return" ></button>
@@ -19,21 +19,19 @@
                 <p-inputNumber [ngModel]="organisation.nrFead" id="nrFead" name="nrFead" mode="decimal" [showButtons]="true" inputId="nrFead" [min]="0" >
                 </p-inputNumber>
             </div>
-            <div *ngIf="organisation.birbCode != '1'" class="p-field p-col-12 p-md-2">
+            <div  class="p-field p-col-12 p-md-2">
                 <label for="birbCode" pTooltip="{{generateTooltipFEADCode()}}">FEAD Code</label>
                 <input pInputText id="birbCode" name="birbCode" maxlength="10" [ngModel]="organisation.birbCode" />
             </div>
-            <div class="p-field p-col-12 p-md-2" pTooltip="{{generateTooltipIsAntenne()}}">
-                <label i18n="@@OrgIsAntenne"  for="isantenne">Is Antenne?</label>
-                <p-inputSwitch id="isAntenne" name="isAntenne" [ngModel]="isAntenne" (onChange)="handleAntenneStatusChange($event)" ></p-inputSwitch>
-            </div>
-            <div *ngIf="organisation.birbCode == '1' " class="p-field p-col-12 p-md-4" pTooltip="{{generateTooltipAntenne()}}">
+
+            <div *ngIf="!organisation.birbCode " class="p-field p-col-12 p-md-4" pTooltip="{{generateTooltipAntenne()}}">
             <label pTooltip="{{generateTooltipSuggestions()}}" i18n="@@AntenneParent" for="selectedAntenne">Antenne Parent</label>
             <p-autoComplete [(ngModel)]="selectedAntenne" [suggestions]="filteredOrganisations" (completeMethod)="filterOrganisation($event)"
+                            [virtualScroll]="true"  [virtualScrollItemSize]="34"
                             [forceSelection]="true" id="selectedAntenne" name="selectedAntenne" field="fullname" [dropdown]="true">
             </p-autoComplete>
             </div>
-            <div *ngIf="organisation.birbCode > '1' " class="p-field p-col-12 p-md-2">
+            <div *ngIf="organisation.birbCode" class="p-field p-col-12 p-md-2">
                 <label i18n="@@OrgFEADFromUs" pTooltip="{{generateTooltipFEADFromUs()}}" for="feadN">FEAD from Us?</label>
                 <p-inputSwitch id="feadN" name="feadN" [ngModel]="organisation.feadN"></p-inputSwitch>
             </div>
