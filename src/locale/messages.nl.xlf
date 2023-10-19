@@ -2299,7 +2299,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">385</context>
+          <context context-type="linenumber">392</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageBankDetailsUpdated" datatype="html">
@@ -5012,7 +5012,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">406</context>
+          <context context-type="linenumber">413</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users-rights/users-rights.component.ts</context>
@@ -8748,7 +8748,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">167</context>
+          <context context-type="linenumber">171</context>
         </context-group>
       </trans-unit>
       <trans-unit id="RoleEXTAdmin" datatype="html">
@@ -9628,7 +9628,7 @@
         <target>Gebruiker <x id="PH" equiv-text="user.idUser"/> voor bank <x id="PH_1" equiv-text="user.idCompany"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">133</context>
+          <context context-type="linenumber">137</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgUserNew2" datatype="html">
@@ -9636,7 +9636,7 @@
         <target>Nieuwe gebruiker voor organisatie <x id="PH" equiv-text="this.currentFilteredOrg.societe"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">154</context>
+          <context context-type="linenumber">158</context>
         </context-group>
       </trans-unit>
       <trans-unit id="BankUserNew1" datatype="html">
@@ -9644,11 +9644,11 @@
         <target>Nieuwe gebruiker voor bank <x id="PH" equiv-text="this.idCompany"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">162</context>
+          <context context-type="linenumber">166</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">199</context>
+          <context context-type="linenumber">206</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgUserNew1" datatype="html">
@@ -9656,7 +9656,7 @@
         <target>Nieuwe gebruiker voor organisatie <x id="PH" equiv-text="this.orgName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">178</context>
+          <context context-type="linenumber">182</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgUserNewC" datatype="html">
@@ -9664,7 +9664,7 @@
         <target>Nieuwe gebruiker voor organisatie <x id="PH" equiv-text="this.depotName"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">185</context>
+          <context context-type="linenumber">189</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgUserNewA" datatype="html">
@@ -9672,7 +9672,7 @@
         <target>Nieuwe gebruiker voor organisatie <x id="PH" equiv-text="this.currentFilteredOrg.societe"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">187</context>
+          <context context-type="linenumber">191</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgUserNewB" datatype="html">
@@ -9680,7 +9680,7 @@
         <target>Nieuwe gebruiker voor depot <x id="PH" equiv-text="this.depotName"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">194</context>
+          <context context-type="linenumber">198</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserDeleted" datatype="html">
@@ -9688,7 +9688,7 @@
         <target>De gebruiker <x id="PH" equiv-text="user.idUser"/> <x id="PH_1" equiv-text="user.userName"/> is verwijderd</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">288</context>
+          <context context-type="linenumber">295</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserDeleteError" datatype="html">
@@ -9696,7 +9696,7 @@
         <target>De gebruiker <x id="PH" equiv-text="user.idUser"/> <x id="PH_1" equiv-text="user.userName"/> kan niet worden verwijderd: fout: <x id="PH_2" equiv-text="dataserviceerror.message"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">302</context>
+          <context context-type="linenumber">309</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserUpdated" datatype="html">
@@ -9704,7 +9704,7 @@
         <target>Gebruiker <x id="PH" equiv-text="modifiedUser.idUser"/> <x id="PH_1" equiv-text="modifiedUser.userName"/> is bijgewerkt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">321</context>
+          <context context-type="linenumber">328</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserUpdateError" datatype="html">
@@ -9712,7 +9712,7 @@
         <target>De gebruiker <x id="PH" equiv-text="modifiedUser.idUser"/> <x id="PH_1" equiv-text="modifiedUser.userName"/> kan niet worden bijgewerkt: fout: <x id="PH_2" equiv-text="dataserviceerror.message"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">331</context>
+          <context context-type="linenumber">338</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserCreated" datatype="html">
@@ -9720,7 +9720,7 @@
         <target>Gebruiker <x id="PH" equiv-text="modifiedUser.idUser"/> <x id="PH_1" equiv-text="modifiedUser.userName"/> is aangemaakt</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">350</context>
+          <context context-type="linenumber">357</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserCreateError" datatype="html">
@@ -9728,7 +9728,7 @@
         <target>De gebruiker <x id="PH" equiv-text="modifiedUser.idUser"/> <x id="PH_1" equiv-text="modifiedUser.userName"/> kan niet worden aangemaakt: fout: <x id="PH_2" equiv-text="dataserviceerror.message"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">364</context>
+          <context context-type="linenumber">371</context>
         </context-group>
       </trans-unit>
       <trans-unit id="messageUserCreateErrorNoEmployee" datatype="html">
@@ -9736,7 +9736,7 @@
         <target>De gebruiker <x id="PH" equiv-text="modifiedUser.idUser"/> kan niet worden aangemaakt: er is geen medewerker geselecteerd</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">372</context>
+          <context context-type="linenumber">379</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipManageDepot" datatype="html">
@@ -9744,7 +9744,7 @@
         <target>Wilt u dat deze gebruiker de voorraad beheert in alle depots van de bank, of alleen de voorraad van een specifiek depot?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">492</context>
+          <context context-type="linenumber">499</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgToolTipAssociatedCpas" datatype="html">
@@ -9752,7 +9752,7 @@
         <target>Welke OCMW beheert de gebruiker?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
-          <context context-type="linenumber">499</context>
+          <context context-type="linenumber">506</context>
         </context-group>
       </trans-unit>
       <trans-unit id="UserLoginSorted" datatype="html">

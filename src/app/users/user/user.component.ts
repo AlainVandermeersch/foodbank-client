@@ -127,7 +127,11 @@ export class UserComponent implements OnInit {
                     } else {
                         if (this.currentFilteredBankShortName == 'SPP') {
                             this.rights = [{label: $localize`:@@RoleFEADAdmin:FEAD Admin`, value: 'Admin_FEAD'}]
-                        } else {
+                        }
+                        else if (this.user.idCompany == 'FBBA' ) {
+                            this.rights = enmUserRolesFBBA;
+                        }
+                        else {
                             this.rights = enmUserRolesBank;
                         }
                         this.title = $localize`:@@BankUserExisting:User ${user.idUser} for bank ${this.user.idCompany}`;
@@ -160,7 +164,7 @@ export class UserComponent implements OnInit {
                             this.loadCpasOptions(this.user.lienBanque);
                             this.rights = enmUserRolesBank;
                             this.title =  $localize`:@@BankUserNew1:New User for bank ${this.currentFilteredBankShortName} `;
-                            if (this.currentFilteredBankShortName == 'FBBA') {
+                            if (this.currentFilteredBankShortName == 'FBBA'  ) {
                                 this.rights = enmUserRolesFBBA;
                             }
                             else if (this.currentFilteredBankShortName == 'SPP') {
@@ -194,6 +198,9 @@ export class UserComponent implements OnInit {
                                     this.title = $localize`:@@OrgUserNewB:New User for depot  ${this.depotName}`;
                                 } else {
                                     this.rights = enmUserRolesBank;
+                                    if (this.idCompany == 'FBBA' ) {
+                                        this.rights = enmUserRolesFBBA;
+                                    }
                                     this.loadDepotOptions(this.idCompany);
                                     this.loadCpasOptions(this.lienBanque);
                                     this.title = $localize`:@@BankUserNew1:New User for bank ${this.idCompany} `;
