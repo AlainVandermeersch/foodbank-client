@@ -100,6 +100,9 @@ export class OrgfeaddetailComponent implements OnInit {
     else {
       modifiedOrganisation.antenne = null;
     }
+    if (modifiedOrganisation.birbCode != null && modifiedOrganisation.birbCode.trim().length == 0) {
+        modifiedOrganisation.birbCode = null;
+    }
     this.organisationsService.update(modifiedOrganisation)
         .subscribe( ()  => {
               this.messageService.add({
