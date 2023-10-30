@@ -166,6 +166,9 @@ export class OrgMembershipMailingComponent implements OnInit {
           this.orgemail = `${this.organisation.email.toLowerCase()}`;
       }
       let cotreal = 100 * this.bankCotAmount * this.organisation.cotMonths / 12 ;
+      if (!this.isYearlyMail) {
+          cotreal = 100 * this.bankCotExtraAmount * this.organisation.cotMonths / 12 ;
+      }
       this.due = Math.round(cotreal * this.organisation.nPers) / 100;
       cotreal = Math.round(cotreal) / 100 ;
       if (this.organisation.langue === 2 ) {
@@ -192,7 +195,13 @@ export class OrgMembershipMailingComponent implements OnInit {
             this.mailingText = this.mailingText.replace(/{{Aantal Personen}}/g, this.organisation.nPers.toString());
             this.mailingText = this.mailingText.replace(/{{Bank Rekening Nummer}}/g, this.bankAccount);
             this.mailingText = this.mailingText.replace(/{{Verschuldigd Bedrag}}/g, this.due.toString());
-            this.mailingText = this.mailingText.replace(/{{Verval Datum}}/g, this.dueDate);          
+            this.mailingText = this.mailingText.replace(/{{Verval Datum}}/g, this.dueDate);
+          if (this.isYearlyMail) {
+              this.mailingText = this.mailingText.replace(/{{Extra}}/g, " ");
+          }
+          else {
+              this.mailingText = this.mailingText.replace(/{{Extra}}/g, " EXTRA ");
+          }
             this.mailingText = this.mailingText.replace(/{{Jaar Bijdrage}}/g, this.cotYear.toString());
           this.mailingText = this.mailingText.replace(/{{Schatbewaarder}}/g, this.bankTreas);
           this.mailingText = this.mailingText.replace(/{{Naam Voedselbank}}/g, this.bankName);
@@ -228,6 +237,12 @@ export class OrgMembershipMailingComponent implements OnInit {
           this.mailingText = this.mailingText.replace(/{{Numéro Compte Bancaire}}/g, this.bankAccount);
           this.mailingText = this.mailingText.replace(/{{Montant dû}}/g, this.due.toString());
           this.mailingText = this.mailingText.replace(/{{Date échéance}}/g, this.dueDate);
+          if (this.isYearlyMail) {
+              this.mailingText = this.mailingText.replace(/{{Supplémentaire}}/g, " ");
+          }
+          else {
+              this.mailingText = this.mailingText.replace(/{{Supplémentaire}}/g, " SUPPLEMENTAIRE ");
+          }
           this.mailingText = this.mailingText.replace(/{{Année de Cotisation}}/g, this.cotYear.toString());
           this.mailingText = this.mailingText.replace(/{{Trésorier}}/g, this.bankTreas);
           this.mailingText = this.mailingText.replace(/{{Nom Banque Alimentaire}}/g, this.bankName);

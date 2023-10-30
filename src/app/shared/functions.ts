@@ -95,7 +95,7 @@ export function getMemberShipMailingTextDefaultFr() {
     mailingTextDefaultFr += `Ce mail vous est adressé afin de vous demander de bien vouloir règler votre {{Type Cotisation}}`;
     mailingTextDefaultFr +=  ` de votre association soit {{Montant Cotisation}}  Euro pour {{Nb de Mois}} mois par bénéficiaire` ;
     mailingTextDefaultFr += `<br>La moyenne des bénéficiaires pour l'année écoulée pour votre association était de {{Nb de Personnes}} personnes`;
-    mailingTextDefaultFr += `<br>Merci de verser le montant de  {{Montant dû}} € sur le compte {{Numéro Compte Bancaire}} au plus tard le <b> {{Date échéance}} </b> avec la mention <b>"COTISATION MEMBRES {{Année de Cotisation}}.</b><br>`;
+    mailingTextDefaultFr += `<br>Merci de verser le montant de  {{Montant dû}} € sur le compte {{Numéro Compte Bancaire}} au plus tard le <b> {{Date échéance}} </b> avec la mention <b>"COTISATION MEMBRES{{Supplémentaire}}{{Année de Cotisation}}".</b><br>`;
     mailingTextDefaultFr += `<br>Avec nos remerciements anticipés.<br><br>Le trésorier,<br>{{Trésorier}}<br>{{Nom Banque Alimentaire}}<br>N° Entreprise: {{N° Entreprise Banque Alimentaire}} `;
     mailingTextDefaultFr += `Adresse: {{Adresse Banque Alimentaire}} {{Code Postal Banque Alimentaire}} {{Commune Banque Alimentaire}} {{Téléphone Banque Alimentaire}}`;
     mailingTextDefaultFr += '<br><br><i>>Note: Facture sur demande</i>';
@@ -106,7 +106,7 @@ export function getMemberShipMailingTextDefaultNl() {
     mailingTextDefaultNl += `Geachte mevrouw/mijnheer,<br>Hierbij vindt u het verzoek tot betaling van de {{Type Bijdrage}}`;
     mailingTextDefaultNl +=  ` van uw liefdadigheidsvereniging aan onze Voedselbank. De basis bijdrage bedraagt {{BijdrageBedrag}}  Euro voor {{Aantal Maanden}} maand per minderbedeelde` ;
     mailingTextDefaultNl += `<br>Het gemiddeld aantal begunstigden voor het voorbije jaar voor uw vereniging bedroeg {{Aantal Personen}}`;
-    mailingTextDefaultNl += `<br>Gelieve het bedrag van {{Verschuldigd Bedrag}} € te willen storten op ons  rekeningnr {{Bank Rekening Nummer}} ten laatste tegen <b> {{Verval Datum}} </b> met melding <b>"LEDENBIJDRAGE {{Jaar Bijdrage}}"</b>.<br>`;
+    mailingTextDefaultNl += `<br>Gelieve het bedrag van {{Verschuldigd Bedrag}} € te willen storten op ons  rekeningnr {{Bank Rekening Nummer}} ten laatste tegen <b> {{Verval Datum}} </b> met melding <b>"LEDENBIJDRAGE{{Extra}}{{Jaar Bijdrage}}"</b>.<br>`;
     mailingTextDefaultNl += `<br>Met dank bij voorbaat.<br><br>De Penningmeester,<br>{{Schatbewaarder}}<br>{{Naam Voedselbank}}<br>Bedrijfsnummer: {{BedrijfsNummer Voedselbank}} `;
     mailingTextDefaultNl += `Adres: {{Adres Voedselbank}} {{PostCode Voedselbank}} {{Gemeente Voedselbank}} {{Telefoon Voedselbank}}`;
     mailingTextDefaultNl += '<br><br><i>Nota: Factuur te verkrijgen op aanvraag</i>';
