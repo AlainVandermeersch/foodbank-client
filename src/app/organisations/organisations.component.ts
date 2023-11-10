@@ -474,6 +474,9 @@ export class OrganisationsComponent implements OnInit {
                     cleanedItem['email'] =item.email;
                     cleanedItem[$localize`:@@Agreed:Agreed`] = labelAgreed(item.agreed);
                     cleanedItem[$localize`:@@FeadCode:Fead Code`] =item.birbCode;
+                    cleanedItem[$localize`:@@FeadBeneficiaries:Fead Beneficiaries`] =item.nrFead;
+                    cleanedItem[$localize`:@@OrganisationPopulation:Registered population`] =item.nPers;
+                    cleanedItem[$localize`:@@OrganisationFamilies:Families`] =item.nFam;
                     cleanedList.push( cleanedItem);
                 });
                 if (!this.bankOptions) {
