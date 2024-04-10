@@ -69,7 +69,7 @@ export class CpasComponent implements OnInit {
                           this.cpas = cpas; // existing cpas
                       }  else {
                           this.cpas = new DefaultCpas();
-                          this.cpas.lBanque = this.lienBanque;
+                          this.cpas.lbanque = this.lienBanque;
                       }
                   });
       this.store
@@ -120,7 +120,7 @@ export class CpasComponent implements OnInit {
 
   save(oldCpas: Cpas, cpasForm: Cpas) {
     const modifiedCpas = Object.assign({}, oldCpas, cpasForm);
-      if (modifiedCpas.hasOwnProperty('cpasId')) {
+     if (modifiedCpas.hasOwnProperty('cpasId')) {
           this.cpassService.update(modifiedCpas)
               .subscribe(() => {
                   this.messageService.add({

@@ -11,8 +11,8 @@
         <div class="p-fluid p-formgrid p-grid">
             <div class="p-field p-col-12 p-md-2">
                 <label for="cpasName">Name</label>
-                <input #cpasname="ngModel"  pInputText id="cpasName" name="cpasName" required  minlength="4" maxlength="255" [ngModel]="cpas.cpasName" />
-                <p-message *ngIf="cpasname.invalid && cpasForm.touched" severity="error" text="OCMW/CPAS Name is required and must be minimum 4 chars long"></p-message>
+                <input #cpasname="ngModel"  pInputText id="cpasName" name="cpasName" required  minlength="3" maxlength="255" [ngModel]="cpas.cpasName" />
+                <p-message *ngIf="cpasname.invalid && cpasForm.touched" severity="error" text="OCMW/CPAS Name is required and must be minimum 3 chars long"></p-message>
             </div>
             <div class="p-field p-col-12 p-md-1">
                 <label for="cpasZip">Zip Code</label>

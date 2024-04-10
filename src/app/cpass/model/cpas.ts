@@ -24,7 +24,7 @@ export interface Cpas {
 
     password: string;
 
-    lBanque: number;
+    lbanque: number;
 
     langue: number;
 
@@ -52,7 +52,7 @@ export class DefaultCpas implements Cpas {
     cpasStreet: string;
     cpasTel: string;
     cpasZip: string;
-    lBanque: number;
+    lbanque: number;
     langue: number;
     password: string;
     rem: string;
@@ -68,7 +68,7 @@ export class DefaultCpas implements Cpas {
         this.cpasStreet = '';
         this.cpasTel = '';
         this.cpasZip = '';
-        this.lBanque = 0;
+        this.lbanque = 0;
         this.langue = 0;
         this.password = '';
         this.rem = '';
