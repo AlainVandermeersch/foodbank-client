@@ -39,6 +39,8 @@ import {MembreFunctionsDataService} from './services/membreFunctions-data.servic
 import {MembreFunctionEntityService} from './services/membreFunction-entity.service';
 import {AuditChangesDataService} from '../audits/services/auditChanges-data.service';
 import {AuditChangeEntityService} from '../audits/services/auditChange-entity.service';
+import {DepotsDataService} from '../depots/services/depots-data.service';
+import {DepotEntityService} from '../depots/services/depot-entity.service';
 
 
 const routes: Routes = [
@@ -91,6 +93,8 @@ const routes: Routes = [
       OrgSummaryEntityService,
       BanquesDataService,
       BanqueEntityService,
+      DepotsDataService,
+      DepotEntityService,
       AuditChangesDataService,
       AuditChangeEntityService,
     ConfirmationService
@@ -104,6 +108,7 @@ export class MembresModule {
       private membreFunctionsDataService: MembreFunctionsDataService,
       private membreEmploiTypesDataService: MembreEmploiTypesDataService,
       private banquesDataService: BanquesDataService,
+      private depotsDataService: DepotsDataService,
       private organisationsDataService: OrganisationsDataService,
       private orgSummariesDataService: OrgSummariesDataService,
       private auditChangesDataService: AuditChangesDataService,
@@ -115,6 +120,7 @@ export class MembresModule {
     entityDataService.registerService('Banque', banquesDataService);
     entityDataService.registerService('Organisation', organisationsDataService);
     entityDataService.registerService('OrgSummary', orgSummariesDataService);
+    entityDataService.registerService('Depot', depotsDataService);
     entityDataService.registerService('AuditChange', auditChangesDataService);
   }
 

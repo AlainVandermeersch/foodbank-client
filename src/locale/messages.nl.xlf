@@ -631,7 +631,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">57</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.html</context>
@@ -767,7 +767,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">544</context>
+          <context context-type="linenumber">582</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/movements/movements-report.component.html</context>
@@ -951,15 +951,15 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">288</context>
+          <context context-type="linenumber">295</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">300</context>
+          <context context-type="linenumber">323</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">320</context>
+          <context context-type="linenumber">343</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users-rights/users-rights.component.ts</context>
@@ -2876,7 +2876,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">22</context>
+          <context context-type="linenumber">30</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users-rights/users-rights.component.html</context>
@@ -2964,7 +2964,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">50</context>
+          <context context-type="linenumber">58</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/org-memberships/org-memberships.component.html</context>
@@ -3000,11 +3000,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">51</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">549</context>
+          <context context-type="linenumber">588</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisation/organisation.component.html</context>
@@ -3056,7 +3056,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">54</context>
+          <context context-type="linenumber">62</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.html</context>
@@ -3076,7 +3076,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">63</context>
         </context-group>
       </trans-unit>
       <trans-unit id="CitySorted" datatype="html">
@@ -3096,7 +3096,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">56</context>
+          <context context-type="linenumber">64</context>
         </context-group>
       </trans-unit>
       <trans-unit id="BirthDateSorted" datatype="html">
@@ -3204,7 +3204,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">547</context>
+          <context context-type="linenumber">586</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/orgcontacts/orgcontacts.component.html</context>
@@ -3224,7 +3224,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">548</context>
+          <context context-type="linenumber">587</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Address" datatype="html">
@@ -3244,7 +3244,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">551</context>
+          <context context-type="linenumber">590</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisations.component.ts</context>
@@ -3276,7 +3276,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">552</context>
+          <context context-type="linenumber">591</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisation/organisation.component.html</context>
@@ -3308,7 +3308,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">553</context>
+          <context context-type="linenumber">592</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisation/organisation.component.html</context>
@@ -3340,7 +3340,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">557</context>
+          <context context-type="linenumber">596</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Phone" datatype="html">
@@ -5004,11 +5004,11 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">286</context>
+          <context context-type="linenumber">293</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">318</context>
+          <context context-type="linenumber">341</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/user/user.component.ts</context>
@@ -5084,7 +5084,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">550</context>
+          <context context-type="linenumber">589</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisation/organisation.component.html</context>
@@ -5920,7 +5920,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">587</context>
+          <context context-type="linenumber">626</context>
         </context-group>
       </trans-unit>
       <trans-unit id="MemberFunctionAdd" datatype="html">
@@ -6259,12 +6259,36 @@
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="OrgDepot" datatype="html">
+        <source>Depot</source>
+        <target>Depot</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/membres/membres.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organisations/organisations.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organisations/orgbeneflist/orgbeneflist.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organisations/orgbenefoverview/orgbenefoverview.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="ExportAllMembers" datatype="html">
         <source>Export All Members</source>
         <target>Alle medewerkers exporteren</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">36</context>
+          <context context-type="linenumber">44</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ExportSelectedMembers" datatype="html">
@@ -6272,7 +6296,7 @@
         <target>Exporteer gefilterde medewerkers</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">39</context>
+          <context context-type="linenumber">47</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AddEmployee" datatype="html">
@@ -6280,7 +6304,7 @@
         <target>Voeg medewerker toe</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">42</context>
+          <context context-type="linenumber">50</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Fonction" datatype="html">
@@ -6288,7 +6312,7 @@
         <target>Functie</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">53</context>
+          <context context-type="linenumber">61</context>
         </context-group>
       </trans-unit>
       <trans-unit id="EmailSorted" datatype="html">
@@ -6296,7 +6320,7 @@
         <target>E-mail<x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon field=&quot;batmail&quot;&gt;"/><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;/p-sortIcon&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">57</context>
+          <context context-type="linenumber">65</context>
         </context-group>
       </trans-unit>
       <trans-unit id="NbUsersSorted" datatype="html">
@@ -6304,7 +6328,7 @@
         <target>Gebruikers<x id="START_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;p-sortIcon field=&quot;nbUsers&quot;&gt;"/><x id="CLOSE_TAG_P_SORTICON" ctype="x-p_sorticon" equiv-text="&lt;/p-sortIcon&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">59</context>
+          <context context-type="linenumber">67</context>
         </context-group>
       </trans-unit>
       <trans-unit id="EmployeesSelected" datatype="html">
@@ -6312,7 +6336,7 @@
         <target> Er zijn <x id="INTERPOLATION" equiv-text="{{totalRecords}}"/> medewerkers in de selectie.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">148,150</context>
+          <context context-type="linenumber">156,158</context>
         </context-group>
       </trans-unit>
       <trans-unit id="EmployeeDetails" datatype="html">
@@ -6320,7 +6344,7 @@
         <target>Details van de Medewerker</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.html</context>
-          <context context-type="linenumber">154</context>
+          <context context-type="linenumber">162</context>
         </context-group>
       </trans-unit>
       <trans-unit id="MemberAnomalyNoEmail" datatype="html">
@@ -6328,7 +6352,7 @@
         <target>Leden zonder e-mail</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="MemberAnomalyNonUniqueEmail" datatype="html">
@@ -6336,7 +6360,7 @@
         <target>Leden met niet-unieke e-mails</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">77</context>
+          <context context-type="linenumber">81</context>
         </context-group>
       </trans-unit>
       <trans-unit id="MemberAnomalyDuplicateNames" datatype="html">
@@ -6344,7 +6368,7 @@
         <target>Leden met dubbele namen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">78</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="bank" datatype="html">
@@ -6352,7 +6376,7 @@
         <target>Bank</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">287</context>
+          <context context-type="linenumber">294</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users-rights/users-rights.component.ts</context>
@@ -6368,7 +6392,7 @@
         <target>Banken</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">319</context>
+          <context context-type="linenumber">342</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/users/users.component.ts</context>
@@ -6380,7 +6404,7 @@
         <target>Gearchiveerde Medewerkers van depot <x id="PH" equiv-text="this.depotName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">484</context>
+          <context context-type="linenumber">523</context>
         </context-group>
       </trans-unit>
       <trans-unit id="DepotMembersTitleActive" datatype="html">
@@ -6388,7 +6412,7 @@
         <target>Actieve medewerkers van depot <x id="PH" equiv-text="this.depotName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">486</context>
+          <context context-type="linenumber">525</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgMembersTitleArchive" datatype="html">
@@ -6396,7 +6420,7 @@
         <target>Gearchiveerde medewerkers van organisatie <x id="PH" equiv-text="this.orgName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">490</context>
+          <context context-type="linenumber">529</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgMembersTitleActive" datatype="html">
@@ -6404,7 +6428,7 @@
         <target>Actieve medewerkers van organisatie <x id="PH" equiv-text="this.orgName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">492</context>
+          <context context-type="linenumber">531</context>
         </context-group>
       </trans-unit>
       <trans-unit id="BankMembersTitleArchive" datatype="html">
@@ -6412,7 +6436,7 @@
         <target>Gearchiveerde medewerkers van bank <x id="PH" equiv-text="this.bankName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">496</context>
+          <context context-type="linenumber">535</context>
         </context-group>
       </trans-unit>
       <trans-unit id="BankMembersTitleActive" datatype="html">
@@ -6420,7 +6444,7 @@
         <target>Actieve medewerkers van bank <x id="PH" equiv-text="this.bankName"/> </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">498</context>
+          <context context-type="linenumber">537</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AllMembersTitleArchive" datatype="html">
@@ -6428,7 +6452,7 @@
         <target>Gearchiveerde medewerkers</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">502</context>
+          <context context-type="linenumber">541</context>
         </context-group>
       </trans-unit>
       <trans-unit id="AllMembersTitleActive" datatype="html">
@@ -6436,7 +6460,7 @@
         <target>Actieve medewerkers</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">504</context>
+          <context context-type="linenumber">543</context>
         </context-group>
       </trans-unit>
       <trans-unit id="MemberTitle" datatype="html">
@@ -6444,7 +6468,7 @@
         <target>Aanspreektitel</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">546</context>
+          <context context-type="linenumber">585</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Nat Number" datatype="html">
@@ -6452,7 +6476,7 @@
         <target>Nationaal nummer</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">558</context>
+          <context context-type="linenumber">597</context>
         </context-group>
       </trans-unit>
       <trans-unit id="None" datatype="html">
@@ -6460,7 +6484,7 @@
         <target>Geen</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">576</context>
+          <context context-type="linenumber">615</context>
         </context-group>
       </trans-unit>
       <trans-unit id="Yes" datatype="html">
@@ -6468,7 +6492,7 @@
         <target>Ja</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">579</context>
+          <context context-type="linenumber">618</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/shared/enums.ts</context>
@@ -6488,7 +6512,7 @@
         <target>Heeft deze medewerker een login voor de toepassing?</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/membres/membres.component.ts</context>
-          <context context-type="linenumber">584</context>
+          <context context-type="linenumber">623</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ShowDaily" datatype="html">
@@ -7557,26 +7581,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/organisations/organisation/organisation.component.ts</context>
           <context context-type="linenumber">410</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="OrgDepot" datatype="html">
-        <source>Depot</source>
-        <target>Depot</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/organisations.component.html</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/orgbeneflist/orgbeneflist.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/orgbenefoverview/orgbenefoverview.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">src/app/organisations/orgfeadoverview/orgfeadoverview.component.html</context>
-          <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
       <trans-unit id="OrgFBBACategory" datatype="html">

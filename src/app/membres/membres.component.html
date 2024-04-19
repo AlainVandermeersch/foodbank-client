@@ -9,16 +9,24 @@
                 <div class="p-field p-col-12 p-md-12">
                     {{ getTitle() }}
                 </div>
-                <div class="p-field p-col-12 p-md-3">
+                <div class="p-field p-col-12 p-md-2">
                     <label i18n="@@ShowArchived" for="archived">Show Archived?</label>
                     <p-checkbox [value]="booShowArchived" binary="true" name="archived" id="archived" (onChange)="changeArchiveFilter($event)"></p-checkbox>
                 </div>
-                <div *ngIf="booIsAdmin || booCanCreate" class="p-field p-col-12 p-md-3">
+                <div *ngIf="booIsAdmin || booCanCreate" class="p-field p-col-12 p-md-2">
                     <label i18n="@@ShowAnomalies" for="anomalies">Show Anomalies?</label>
                     <p-dropdown [ngModel]="anomalyFilter" id="anomalies" [options]="anomaliesOptions" (onChange)="changeAnomaliesFilter($event.value)" placeholder="Any" [showClear]="true">
                     </p-dropdown>
                 </div>
-                <div *ngIf="booShowOrganisations" class="p-field p-col-12 p-md-5">
+                <div *ngIf="booShowOrganisations" class="p-field p-col-12 p-md-2">
+                    <label i18n="@@OrgDepot" for="depots">Depot</label>
+                    <p-dropdown id ="depots" [options]="depots" (onChange)="filterDepot($event.value)"  >
+                        <ng-template let-option pTemplate="item">
+                            <span>{{option.label}}</span>
+                        </ng-template>
+                    </p-dropdown>
+                </div>
+                <div *ngIf="booShowOrganisations && !depotName" class="p-field p-col-12 p-md-4">
                     <label pTooltip="{{generateTooltipOrganisation()}}" i18n="@@FilterOnOrganisations" for="filteredOrganisation">Filter on Organisations?</label>
                     <p-autoComplete  [(ngModel)]="filteredOrganisation" [suggestions]="filteredOrganisations" (completeMethod)="filterOrganisation($event)"
                                      (onSelect)="filterOrganisationMembers($event.idDis);"

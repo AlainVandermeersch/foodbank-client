@@ -18,6 +18,7 @@ import {MembreHttpService} from './services/membre-http.service';
 import {formatDate} from '@angular/common';
 import {labelActive, labelCivilite, labelLanguage,generateTooltipOrganisation} from '../shared/functions';
 import {MembreFunctionEntityService} from './services/membreFunction-entity.service';
+import {DepotEntityService} from '../depots/services/depot-entity.service';
 
 
 @Component({
@@ -59,10 +60,13 @@ export class MembresComponent implements OnInit {
     bankOptions: any[];
     membreFunctions : any[];
     selectedFunction: any;
+    depots: any[];
+    depotSelected: string;
     constructor(private membreService: MembreEntityService,
                 private membreFunctionEntityService: MembreFunctionEntityService,
                 private banqueService: BanqueEntityService,
                 private orgsummaryService: OrgSummaryEntityService,
+                private depotService: DepotEntityService,
                 private authService: AuthService,
                 private excelService: ExcelService,
                 private router: Router,
@@ -220,6 +224,9 @@ export class MembresComponent implements OnInit {
                     default:    // members of a specific organisation
                         queryParms['lienDis'] = this.organisationFilterId;
                 }
+                if (this.depotSelected) {
+                    queryParms['lDep'] = this.depotSelected;
+                }
             }
         }
         if (event.filters) {
@@ -288,6 +295,22 @@ export class MembresComponent implements OnInit {
                         {idDis: 999, fullname: $localize`:@@organisations:Organisations` },
                     ];
                     this.filteredOrganisation = this.filteredOrganisationsPrepend[0];
+                    const  queryDepotParms: QueryParams = {};
+                    queryDepotParms['offset'] = '0';
+                    queryDepotParms['rows'] = '999';
+                    queryDepotParms['sortField'] = 'nom';
+                    queryDepotParms['sortOrder'] = '1';
+                    if (authState.banque.bankId) {
+                        queryDepotParms['idCompany'] = this.bankShortName;
+                    }
+                    queryDepotParms['actif'] = '1';
+                    this.depotService.getWithQuery(queryDepotParms)
+                        .subscribe(depots => {
+                            this.depots = [{ value: null, label: ''}];
+                            depots.map((depot) =>
+                                this.depots.push({value: depot.idDepot, label: depot.nom})
+                            );
+                        });
                     break;
                 case 'Asso':
                 case 'Admin_Asso':
@@ -448,6 +471,22 @@ export class MembresComponent implements OnInit {
 
         this.loadPageSubject$.next(latestQueryParams);
     }
+    filterDepot(idDepot) {
+        this.depotSelected = idDepot;
+        this.first = 0;
+        const latestQueryParams = {...this.loadPageSubject$.getValue()};
+        // when we switch we need to restart from first page
+        latestQueryParams['offset'] = '0';
+        if (this.depotSelected) {
+            latestQueryParams['lDep'] = idDepot;
+        } else {
+            // delete idDepot entry
+            if (latestQueryParams.hasOwnProperty('lDep')) {
+                delete latestQueryParams['lDep'];
+            }
+        }
+        this.loadPageSubject$.next(latestQueryParams);
+    }
     changeArchiveFilter($event) {
         this.booShowArchived = $event.checked;
         this.first = 0;
@@ -514,7 +553,6 @@ export class MembresComponent implements OnInit {
             delete excelQueryParams['sortOrder'];
             delete excelQueryParams['sortField'];
             label = "filtered.";
-
         }
         else {
             excelQueryParams = { 'actif':'1'};
@@ -543,6 +581,7 @@ export class MembresComponent implements OnInit {
                     if (this.bankOptions) {
                         cleanedItem[$localize`:@@Bank:Bank`] = item.bankShortName;
                     }
+
                     cleanedItem[$localize`:@@MemberTitle:Title`] = labelCivilite(item.civilite);
                     cleanedItem[$localize`:@@Name:Name`] = item.nom;
                     cleanedItem[$localize`:@@FirstName:First Name`] =item.prenom;
