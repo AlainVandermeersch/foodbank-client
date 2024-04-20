@@ -586,7 +586,7 @@ export class MembresComponent implements OnInit {
                     cleanedItem[$localize`:@@Name:Name`] = item.nom;
                     cleanedItem[$localize`:@@FirstName:First Name`] =item.prenom;
                     cleanedItem[$localize`:@@Organisation:Organisation`] =item.societe;
-                    cleanedItem['Depot'] =item.lDep;
+                    cleanedItem['Depot'] =item.ldep;
                     cleanedItem[$localize`:@@Language:Language`] = labelLanguage(item.langue)
                     cleanedItem[$localize`:@@Address:Address`] = item.address;
                     cleanedItem[$localize`:@@ZipCode:Zip Code`] =item.zip;
