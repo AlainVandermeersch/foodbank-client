@@ -37,7 +37,7 @@
             </div>
             <div class="p-field p-col-12 p-md-3">
                 <label i18n="@@EMailMandatory" for="batmail">E-mail *</label>
-                <input #batmail="ngModel" pInputText id="batmail" name="batmail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="50" [ngModel]="membre.batmail" />
+                <input #batmail="ngModel" pInputText id="batmail" name="batmail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,8}$" maxlength="50" [ngModel]="membre.batmail" />
                 <p-message i18n-text="@@EmailIsMandatory" *ngIf="batmail.invalid && membreForm.touched" severity="error" text="E-mail is required and must be lowercase and valid"></p-message>
             </div>
 
